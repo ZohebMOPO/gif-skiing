@@ -1,8 +1,8 @@
 {
   "$schema": "../node_modules/@tauri-apps/cli/schema.json",
   "build": {
-    "beforeBuildCommand": "npm run build",
-    "beforeDevCommand": "npm run dev",
+    "beforeBuildCommand": "yarn build",
+    "beforeDevCommand": "yarn dev",
     "devPath": "http://localhost:3000",
     "distDir": "../out"
   },
@@ -12,11 +12,11 @@
   },
   "tauri": {
     "allowlist": {
-      "all": false
+      "all": true
     },
     "bundle": {
       "active": true,
-      "category": "DeveloperTool",
+      "category": "Utility",
       "copyright": "",
       "deb": {
         "depends": []
@@ -53,13 +53,18 @@
     "updater": {
       "active": false
     },
+    "macOSPrivateApi": true,
     "windows": [
       {
         "fullscreen": false,
         "height": 600,
-        "resizable": true,
-        "title": "Gif Skiing",
-        "width": 800
+        "resizable": false,
+        "title": "Gif Skiing ⛷️",
+        "width": 800,
+        "titleBarStyle": "Overlay",
+        "transparent": true,
+        "fileDropEnabled": true,
+        "acceptFirstMouse": true
       }
     ]
   }
