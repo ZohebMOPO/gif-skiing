@@ -7,7 +7,7 @@
     "distDir": "../out"
   },
   "package": {
-    "productName": "gifskiing",
+    "productName": "GIF Skiing",
     "version": "0.1.0"
   },
   "tauri": {

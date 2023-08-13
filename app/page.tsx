@@ -27,6 +27,7 @@ export default function Home() {
 
   return (
     <main>
+      <p>Drag and drop a video (or a sequence of images) to turn into a GIF</p>
       <Button title={"Convert to GIF"} />
     </main>
   )
