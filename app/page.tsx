@@ -7,7 +7,11 @@ import Button from "https://framer.com/m/Button-8lyt.js@AYILo02jKZzU30gyM75p";
 
 export default function Home() {
   const Trigger = async () => {
-    const command = Command.sidecar("bin/gifski-1.11.0/win/gifski");
+    const commandArguments = "--fps 10 --width 320 -o anim.gif video.mp4";
+    const command = Command.sidecar(
+      "bin/gifski-1.11.0/win/gifski",
+      commandArguments.split(" ")
+    );
     const output = await command.execute();
     console.log({ output });
   };

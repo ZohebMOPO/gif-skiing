@@ -15,9 +15,9 @@
       "shell": {
         "sidecar": true,
         "scope": [
-          {"name": "C:\\Users\\Zoheb\\Documents\\code\\gif-skiing\\src-tauri\\bin\\gifski-1.11.0\\win\\gifski", "sidecar": true},
-          {"name": "./bin/gifski-1.11.0/win/gifski", "sidecar": true},
-          {"name": "bin/gifski-1.11.0/win/gifski", "sidecar": true}
+          {"name": "C:\\Users\\Zoheb\\Documents\\code\\gif-skiing\\src-tauri\\bin\\gifski-1.11.0\\win\\gifski", "sidecar": true, "args": true},
+          {"name": "./bin/gifski-1.11.0/win/gifski", "sidecar": true, "args": true},
+          {"name": "bin/gifski-1.11.0/win/gifski", "sidecar": true, "args": true}
         ]
       }
     },
