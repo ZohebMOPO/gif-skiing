@@ -12,12 +12,15 @@
   },
   "tauri": {
     "allowlist": {
+      "all": true,
       "shell": {
         "sidecar": true,
         "scope": [
-          {"name": "C:\\Users\\Zoheb\\Documents\\code\\gif-skiing\\src-tauri\\bin\\gifski-1.11.0\\win\\gifski", "sidecar": true, "args": true},
-          {"name": "./bin/gifski-1.11.0/win/gifski", "sidecar": true, "args": true},
-          {"name": "bin/gifski-1.11.0/win/gifski", "sidecar": true, "args": true}
+          {
+            "name": "bin/gifski",
+            "sidecar": true,
+            "args": true
+          }
         ]
       }
     },
@@ -29,9 +32,7 @@
         "depends": []
       },
       "externalBin": [
-        "C:\\Users\\Zoheb\\Documents\\code\\gif-skiing\\src-tauri\\bin\\gifski-1.11.0\\win\\gifski",
-        "./bin/gifski-1.11.0/win/gifski",
-        "bin/gifski-1.11.0/win/gifski"
+        "bin/gifski"
       ],
       "icon": [
         "icons/32x32.png",
